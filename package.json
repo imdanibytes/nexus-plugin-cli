@@ -1,0 +1,29 @@
+{
+  "name": "nexus-plugin-cli",
+  "version": "0.1.0",
+  "description": "Developer CLI for scaffolding, validating, and publishing Nexus plugins",
+  "bin": {
+    "nexus-plugin": "./bin/nexus-plugin.js",
+    "nexus-plugin-cli": "./bin/nexus-plugin.js"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "keywords": [
+    "nexus",
+    "plugin",
+    "cli",
+    "scaffold",
+    "validate"
+  ],
+  "author": "imdanibytes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imdanibytes/nexus-plugin-cli"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
