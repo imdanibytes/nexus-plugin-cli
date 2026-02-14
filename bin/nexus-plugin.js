@@ -37,8 +37,11 @@ const HELP = `
     --json            Output results as JSON (for CI parsing)
 
   publish Options:
-    --manifest-url    Raw URL to plugin.json (skips prompt)
-    --categories      Comma-separated categories (skips prompt)
+    --manifest-url    Raw URL to plugin.json (required in CI)
+    --categories      Comma-separated categories (default: utilities)
+
+  Publish computes image_digest and manifest_sha256 automatically.
+  Requires: gh CLI (authenticated), Docker (for image digest).
 `;
 
 if (!command || command === "--help" || command === "-h" || args.help || args.h) {
